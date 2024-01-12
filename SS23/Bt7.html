@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt7</title>
+</head>
+<body>
+    <script>
+        let num=+prompt("Nhap so can kiem tra");
+        let result=0;
+        if (isNaN(num)||num%1!=0) {
+            console.log("INVALID");
+        }else{
+            for (let i = 1; i <=num/2;  i++) {
+                if (num%i==0) {
+                    
+                    result+=i;
+                }
+            }
+         
+            if (result==num) {
+                console.log("Do la so hoan hao");
+            }else{
+                console.log("Do ko phai so hoan hao");
+            }
+        }
+    </script>
+</body>
+</html>

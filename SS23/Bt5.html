@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt5</title>
+</head>
+<body>
+    <script>
+        let num=Math.floor(Math.random()*10);
+        let guessNum;
+        while(guessNum!=num){
+            guessNum=+prompt("nhap so ma ban doan");
+            if (guessNum==num) {
+                alert("Ban da doan dung")
+            }else if(guessNum>num){
+                alert("So do be hon");
+            }else alert("So do lon hon");
+        }
+    </script>
+</body>
+</html>
